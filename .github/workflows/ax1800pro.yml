@@ -13,7 +13,6 @@ env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-23.05
   CONFIG_FILE: ax1800pro.config
-  DIY_SH: diy.sh
   FILES: ax1800pro/
   TZ: Asia/Shanghai
 
@@ -64,7 +63,6 @@ jobs:
       run: |
         [ -e $FILES ] && mv $FILES openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        chmod +x $DIY_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_SH
 
