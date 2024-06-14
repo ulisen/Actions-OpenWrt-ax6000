@@ -11,7 +11,7 @@ on:
     - cron: "0 0 1,16 * *"
 env:
   REPO_URL: https://github.com/ulisen/immortalwrt.git
-  REPO_BRANCH: main
+  REPO_BRANCH: master
   CONFIG_FILE: ax1800pro.config
   FILES: ax1800pro/
   TZ: Asia/Shanghai
