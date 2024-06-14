@@ -61,8 +61,8 @@ jobs:
 
     - name: Load custom config
       run: |
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-         cp -r $FILES openwrt/
+        cp -f ax1800pro.config openwrt/.config
+        cp -f ax1800pro/ openwrt/
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_SH
 
